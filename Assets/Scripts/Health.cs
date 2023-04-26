@@ -2,21 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animate : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    Animator animator;
-
-    public float horizontal;
-
+    public static float totalHealth = 1f;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponentInChildren<Animator>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("Horizontal", horizontal);
+        
     }
 }
